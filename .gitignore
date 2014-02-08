@@ -2,3 +2,4 @@
 *.dat
 performance_plot
 really_simple_example
+.ipynb_checkpoints

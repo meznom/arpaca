@@ -212,7 +212,7 @@ void print_usage(char* program)
         << std::endl
         << "Example: " << std::endl
         << "   " << program
-        << " 100 1001 9 10 0.3 0.1" << std::endl;
+        << " 100 1000 10 10 0.3 0.1" << std::endl;
 }
 
 void print_header(int n_rep, double r_ev, double r_zeros, int w)
@@ -262,12 +262,14 @@ int main (int argc, char** argv)
     if (r_zeros < 0) r_zeros = 0;
     if (r_zeros > 1) r_zeros = 1;
 
-    int delta_dim = (n_dim_max - n_dim_min) / n_dp;
+    int delta_dim = n_dim_max - n_dim_min + 1;
+    if (n_dp > 1)
+        delta_dim = (n_dim_max - n_dim_min) / (n_dp-1);
     if (delta_dim == 0) delta_dim = 1;
 
     const int w = 15;
     print_header(n_rep, r_ev, r_zeros, w);
-    for (int n_dim = n_dim_min; n_dim < n_dim_max; n_dim += delta_dim)
+    for (int n_dim = n_dim_min; n_dim <= n_dim_max; n_dim += delta_dim)
     {
         Eigen::VectorXd v(6);
         v.setZero();
