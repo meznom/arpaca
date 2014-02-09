@@ -8,10 +8,10 @@
  * To compile this program: 
  * g++ \
  *    -I [/path/to/eigen] \
+ *    really_simple_example.cpp \
  *    -L [/path/to/libarpack.a] \
  *    -larpack \
- *    -o really_simple_example \
- *    really_simple_example.cpp 
+ *    -o really_simple_example
  *
  * This assumes that arpaca.hpp is in the same directory.
  */

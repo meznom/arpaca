@@ -1,5 +1,6 @@
 *.swp
 *.dat
+performance_main
 performance_plot
 really_simple_example
 .ipynb_checkpoints

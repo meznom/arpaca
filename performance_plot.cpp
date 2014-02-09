@@ -19,14 +19,14 @@
  *
  * To compile this program: 
  * g++ \
- *    -I [/path/to/eigen] \
- *    -L [/path/to/libarpack.a] \
- *    -larpack \
  *    -std=c++11 \
+ *    -I [/path/to/eigen] \
  *    -O3 \
  *    -DNDEBUG \
- *    -o performance_plot \
- *    performance_plot.cpp 
+ *    performance_plot.cpp \
+ *    -L [/path/to/libarpack.a] \
+ *    -larpack \
+ *    -o performance_plot
  *
  * This assumes that arpaca.hpp is in the same directory.
  */
