@@ -2,5 +2,7 @@
 *.dat
 performance_main
 performance_plot
+performance_plot_nr
 really_simple_example
+nr
 .ipynb_checkpoints
