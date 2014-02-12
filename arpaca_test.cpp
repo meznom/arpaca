@@ -1,11 +1,9 @@
-#define EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET
-
 #include <cstdlib>
 #include <algorithm>
 #include <iostream>
 #include <vector>
-#include <eigen3/Eigen/Dense>
-#include <eigen3/Eigen/Sparse>
+#include <Eigen/Dense>
+#include <Eigen/Sparse>
 #include <gtest/gtest.h>
 #include "arpaca.hpp"
 

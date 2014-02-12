@@ -12,8 +12,8 @@ If you want to install it from source code,
 gfortran, BLAS (ATLAS is better as its implementation) and LAPACK are
 required.
 
-arpaca_performance_test also depends on
-[pficommon](http://github.com/pfi/pficommon "pficommon").
+`arpaca_performance_test` and `arpaca_performance_plot` require a compiler with
+C++11 support.
 
 Installation
 ------------
@@ -21,6 +21,20 @@ Installation
 Just copy arpaca.hpp where you like.
 Since the interface may be changed in the future,
 it is recommended to copy it to the local directory of your own project.
+
+To build the example programs and test suite:
+
+```bash
+$ ./waf configure
+$ ./waf
+# build and run tests
+$ ./waf --check
+# optionally install arpaca.hpp to /usr/local/include
+$ ./waf install
+```
+
+You will find the programs in the directory `build`. If `./waf configure` does
+not succeed try changing the include and lib paths in `wscript`.
 
 Typical Usage
 -------------
