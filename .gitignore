@@ -1,8 +1,8 @@
 *.swp
-*.dat
-performance_main
-performance_plot
-performance_plot_nr
-really_simple_example
-nr
-.ipynb_checkpoints
+*.pyc
+build/
+.lock-wafbuild
+.unittest-gtest/
+.waf-*/
+.ipynb_checkpoints/
+nr/
